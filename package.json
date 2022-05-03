@@ -1,7 +1,7 @@
 {
-  "name": "t-01-starter",
+  "name": "@llbeyer/stencil-test",
   "version": "0.0.1",
-  "description": "Stencil Component Starter",
+  "description": "Test components build with stencil",
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",
   "es2015": "dist/esm/index.mjs",
@@ -12,7 +12,7 @@
   "unpkg": "dist/t-01-starter/t-01-starter.esm.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ionic-team/stencil-component-starter.git"
+    "url": "git+https://github.com/llbeyer/stencil-test.git"
   },
   "files": [
     "dist/",
@@ -23,7 +23,8 @@
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
-    "generate": "stencil generate"
+    "generate": "stencil generate",
+    "prepublish": "npm run build"
   },
   "dependencies": {
     "@stencil/core": "^2.13.0"
