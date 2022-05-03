@@ -1,0 +1,75 @@
+@import "mt-button.variables";
+@import "src/themes/mt.globals";
+
+:host {
+  display: block;
+}
+
+.mt-btn {
+  border: none;
+  cursor: pointer;
+  background: none;
+
+  padding-inline: $button-padding-inline;
+  padding-block: $button-padding-block;
+
+  border-radius: $button-border-radius;
+}
+
+.mt-btn-primary {
+  background-color: $clr-primary-500;
+  color: $clr-neutral-100;
+
+  &.mt-btn-text {
+    background-color: unset;
+    color: $clr-primary-500;
+
+    &:hover,
+    &:active {
+      background-color: rgba($clr-primary-500, .2);
+    }
+  }
+}
+
+.mt-btn-warn {
+  background-color: $clr-warn-500;
+  color: $clr-neutral-100;
+
+  &.mt-btn-text {
+    background-color: unset;
+    color: $clr-warn-500;
+
+    &:hover,
+    &:active {
+      background-color: rgba($clr-warn-500, .2);
+    }
+  }
+}
+
+.mt-btn-error {
+  background-color: $clr-error-500;
+  color: $clr-neutral-100;
+
+  &.mt-btn-text {
+    background-color: unset;
+    color: $clr-error-500;
+
+    &:hover,
+    &:active {
+      background-color: rgba($clr-error-500, .2);
+    }
+  }
+}
+
+.mt-btn-disabled {
+  background-color: $clr-neutral-500;
+  cursor: default;
+}
+
+.mt-btn-elevated {
+  box-shadow: 0 5px 15px rgba(0 0 0 / .4);
+}
+
+.mt-btn-times-clicked {
+  margin-inline: .25rem;
+}
